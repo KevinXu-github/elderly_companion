@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.talk-button {
+  font-size: 28px;
+  padding: 25px 50px;
+  border: none;
+  border-radius: 15px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  margin: 20px;
+  transition: all 0.3s;
+}
+
+.talk-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.talk-button.listening {
+  background-color: #ff4444;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.stop-button {
+  font-size: 20px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f44336;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.conversation {
+  margin-top: 30px;
+  text-align: left;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.message {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.message.user {
+  background-color: #e3f2fd;
+  margin-left: 50px;
+}
+
+.message.bot {
+  background-color: #f1f8e9;
+  margin-right: 50px;
+}
+
+.subtitle {
+  font-size: 0.6em;
+  color: #666;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+.button-text {
+  font-size: 28px;
+}
+
+.button-subtitle {
+  font-size: 16px;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+.stop-button .button-subtitle {
+  font-size: 14px;
+  margin-top: 5px;
+}
